@@ -44,6 +44,20 @@
                                     supported by Chrome and Opera */
   
 }
+
+.noTextDeco(@nFontColour){
+    text-decoration: none;
+    color: @nFontColour;
+    &:active, &:link, &:visited{
+        text-decoration: none;
+        color: @nFontColour;
+    }
+}
+
+.italic{
+    font-style: italic;
+}
+
 .btnClass(@fColour, @fSize, @fHeight, @fBGColour){
     text-align: center;
     font-size: @fSize;
@@ -54,7 +68,11 @@
     border-radius: 4px;
     width: 100px;
     cursor: pointer;
-    &:hover{background-color: @fColour; color: @fBGColour; text-decoration: underline;}
+    &:hover{
+        background-color: @fColour;
+        a{ color: @fBGColour; }
+        text-decoration: underline;
+    }
   }
 
   .btnClassMobile(@nWidth, @nHeight){
@@ -63,4 +81,14 @@
         height: @nHeight;
         line-height: @nHeight;
       }
+  }
+
+  .flexStyle(@flow, @wrap){
+      display: flex;
+      flex-flow: @flow @wrap;
+  }
+
+
+  .signupBorderLine(){
+      border-right: 1px solid @border-box-signup;
   }

@@ -42,6 +42,9 @@
     opacity: 1;
   }
 }
+.italic {
+  font-style: italic;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -363,10 +366,22 @@ footer {
   width: 100px;
   cursor: pointer;
 }
+.home .walk .walk-text .btn a {
+  text-decoration: none;
+  color: #F6F6F6;
+}
+.home .walk .walk-text .btn a:active,
+.home .walk .walk-text .btn a:link,
+.home .walk .walk-text .btn a:visited {
+  text-decoration: none;
+  color: #F6F6F6;
+}
 .home .walk .walk-text .btn:hover {
   background-color: #F6F6F6;
-  color: #22283A;
   text-decoration: underline;
+}
+.home .walk .walk-text .btn:hover a {
+  color: #22283A;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
@@ -390,4 +405,120 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.signup-area {
+  display: flex;
+  width: 100%;
+  flex-flow: column nowrap;
+}
+.subscriptionsList {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
+  margin: 3rem 0 1.5rem;
+}
+.subscriptionsList .subscriptionTitle {
+  width: 100%;
+  padding: 0.5rem 0.5rem 0.5rem 1.1rem;
+  background-color: #5E6164;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.subscriptionsList .subscriptionTitle h3 {
+  color: #F6F6F6;
+}
+.subscriptionsList .subBtnSubmit {
+  text-align: center;
+  font-size: 2rem;
+  color: #F6F6F6;
+  background-color: #22283A;
+  height: 3.7rem;
+  line-height: 3.7rem;
+  border-radius: 4px;
+  width: 100px;
+  cursor: pointer;
+  margin: 2rem 3rem 1rem auto;
+}
+.subscriptionsList .subBtnSubmit a {
+  text-decoration: none;
+  color: #F6F6F6;
+}
+.subscriptionsList .subBtnSubmit a:active,
+.subscriptionsList .subBtnSubmit a:link,
+.subscriptionsList .subBtnSubmit a:visited {
+  text-decoration: none;
+  color: #F6F6F6;
+}
+.subscriptionsList .subBtnSubmit:hover {
+  background-color: #F6F6F6;
+  text-decoration: underline;
+}
+.subscriptionsList .subBtnSubmit:hover a {
+  color: #22283A;
+}
+@media (max-width: 500px) {
+  .subscriptionsList .subBtnSubmit {
+    width: 100%;
+    height: 6rem;
+    line-height: 6rem;
+  }
+}
+.subTile {
+  margin: 0.5rem 0 0.5rem;
+  width: 100%;
+  border-bottom: 1px solid #dadedb;
+  border-right: 1px solid #dadedb;
+  padding: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.subTile .subRadio {
+  border-right: 1px solid #dadedb;
+  width: 7%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+}
+.subTile .subRadio .radioText {
+  font-size: 0.8rem;
+}
+.subTile .subType {
+  border-right: 1px solid #dadedb;
+  margin: 0 1rem 0 1rem;
+  width: 27%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.subTile .subType .subTypeText {
+  font-size: 2rem;
+}
+.subTile .subPrice {
+  border-right: 1px solid #dadedb;
+  margin: 0 1rem 0 1rem;
+  width: 18%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.subTile .subPrice .subPriceText {
+  font-size: 1.8rem;
+}
+.subTile .subPrice .subPriceSale {
+  font-size: 1.6rem;
+  text-decoration: line-through;
+}
+.subTile .subBenefits {
+  margin-right: 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 42%;
+}
+.subTile .subBenefits .subBenefitsText {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.subTile .subBenefits ul {
+  list-style-type: circle;
+  list-style: inside;
 }
