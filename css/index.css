@@ -181,6 +181,28 @@ body {
   font-family: 'Ubuntu', sans-serif;
   color: #5E6164;
   font-weight: 500;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+  -webkit-animation: fadein 3s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 3s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 3s;
+  /* Internet Explorer */
+  -o-animation: fadein 3s;
+  /* Opera < 12.1 */
+  animation: fadein 3s;
 }
 h1,
 h2,
@@ -205,10 +227,14 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.topNavFixed {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(246, 246, 246, 0.9);
+}
 .topNavContainer {
   display: flex;
   width: 100%;
-  max-width: 800px;
   margin: 2rem auto 0 auto;
   flex-flow: column nowrap;
   justify-content: center;
@@ -222,8 +248,8 @@ p {
 }
 .topNavContainer .topNav {
   display: flex;
-  justify-content: space-between;
-  width: 50%;
+  justify-content: center;
+  width: 100%;
   margin: 1.9rem auto 1rem auto;
 }
 @media (max-width: 500px) {
@@ -237,9 +263,16 @@ p {
   color: #5E6164;
   font-weight: 500;
   text-decoration: none;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 .topNavContainer .topNav a:hover {
-  text-decoration: none;
+  text-decoration: underline;
+}
+@media (max-width: 500px) {
+  .topNavContainer .topNav a {
+    margin: 0;
+  }
 }
 footer {
   color: #22283B;
@@ -250,6 +283,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  padding-top: 105px;
 }
 .home .intro img {
   width: 100%;
