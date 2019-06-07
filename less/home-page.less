@@ -3,7 +3,9 @@
 .home {
 
   .intro {
-
+    img{
+      border-radius: 0.5rem;
+    }
     h2 {
       padding: 15px;
     }
@@ -56,8 +58,8 @@
       p {
         margin-bottom: 26px;
       }
-
       .btn {
+        .btnClass(@wild-sand, ~"2rem", ~"3.7rem", @btn-bg-color);
       }
     }
 
@@ -70,6 +72,7 @@
         height: auto;
         border-radius: 10px;
       }
+
     }
   }
 }// home
