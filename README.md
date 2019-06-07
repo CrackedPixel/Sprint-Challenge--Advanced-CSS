@@ -1,3 +1,38 @@
+What is the difference between an adaptive website and a fully responsive website?
+
+Adaptive has different modes for different devices, but nothing in between. Fully responsive is from A to Z
+
+
+
+Describe what it means to be mobile first vs desktop first.
+
+X-First means that's your target when designing the site and usually the best looking version. Your media queries have to adjust for that and you have to think about inheritance
+
+
+
+What does font-size: 62.5% in the html tag do for us when using rem units?
+
+This makes it easy for us to do math! It makes 1rem equal to 10px (on standard zoom) and we can use that to quickly align elements
+
+
+
+
+How would you describe preprocessing to someone new to CSS?
+
+You tell them how you want it, and it makes it happen. It takes your code and organizes/re-structures it
+
+
+What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favourite concept is being able to use multiple files for organization, while having one (tiny) CSS file that i can upload and use. It keeps the project organized but still keeps it to 1 HTTP request. I don't think I'm struggling with any concepts but I would like to get more practice with selectors
+
+
+
+
+
+
+
+
 # Sprint Challenge: Advanced CSS - Space Walkers Web Page
 
 This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a concrete project. This Sprint explored advanced CSS techniques using Responsive Design and Preprocessing. During this Sprint, you studied how to use the viewport meta tag, media queries, setting up a preprocessor, and advanced use of preprocessing techniques. In your challenge this week, you will demonstrate proficiency by updating a website that is missing content as well as adding mobile styling.
