@@ -1,3 +1,4 @@
+##-----------------------------------------------------------------------------
 What is the difference between an adaptive website and a fully responsive website?
 
 Adaptive has different modes for different devices, but nothing in between. Fully responsive is from A to Z
@@ -22,15 +23,33 @@ How would you describe preprocessing to someone new to CSS?
 You tell them how you want it, and it makes it happen. It takes your code and organizes/re-structures it
 
 
+
+
 What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
 My favourite concept is being able to use multiple files for organization, while having one (tiny) CSS file that i can upload and use. It keeps the project organized but still keeps it to 1 HTTP request. I don't think I'm struggling with any concepts but I would like to get more practice with selectors
 
 
 
+##-----------------------------------------------------------------------------
+What did you find *difficult* about the Sprint?
+
+Creating our own content is something I struggle with because I'm not proficient at design. It took awhile to decide how I wanted everything to look and say
+
+What did you find *easy* about the Sprint?
+
+Completing the MVP was very easy because we were very well prepared for this one
+
+Is there anything that you could *not* complete on today's Sprint?
+
+Nope! I got all 4 sprints as well
+
+Are there any concepts that you find that you *don't understand* that was taught from the week?
+
+It's not that I don't understand them, but I do want to try and practice more advanced selectors
 
 
-
+##-----------------------------------------------------------------------------
 
 
 # Sprint Challenge: Advanced CSS - Space Walkers Web Page
