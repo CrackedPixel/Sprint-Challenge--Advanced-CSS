@@ -56,3 +56,11 @@
     cursor: pointer;
     &:hover{background-color: @fColour; color: @fBGColour; text-decoration: underline;}
   }
+
+  .btnClassMobile(@nWidth, @nHeight){
+    @media @phone{
+        width: @nWidth;
+        height: @nHeight;
+        line-height: @nHeight;
+      }
+  }
