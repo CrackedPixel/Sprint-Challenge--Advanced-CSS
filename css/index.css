@@ -293,6 +293,7 @@ footer {
 .home .intro img {
   width: 100%;
   border-radius: 0.5rem;
+  padding: 2px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -378,6 +379,7 @@ footer {
 }
 .home .walk .walk-text .btn:hover {
   background-color: #F6F6F6;
+  color: #22283A;
   text-decoration: underline;
 }
 .home .walk .walk-text .btn:hover a {
@@ -410,6 +412,12 @@ footer {
   display: flex;
   width: 100%;
   flex-flow: column nowrap;
+  padding: 15px;
+}
+@media (max-width: 500px) {
+  .signup-area {
+    padding: 2rem 2rem;
+  }
 }
 .subscriptionsList {
   display: flex;
@@ -452,6 +460,7 @@ footer {
 }
 .subscriptionsList .subBtnSubmit:hover {
   background-color: #F6F6F6;
+  color: #22283A;
   text-decoration: underline;
 }
 .subscriptionsList .subBtnSubmit:hover a {
@@ -521,4 +530,84 @@ footer {
 .subTile .subBenefits ul {
   list-style-type: circle;
   list-style: inside;
+}
+.contact-area {
+  margin: 3rem 0 5rem;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.contact-area form {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.contact-area form input {
+  width: 55%;
+  height: 2.5rem;
+  margin: 0.2rem;
+  border: 1px solid #dadedb;
+  padding: 1rem;
+  font-size: 1.7rem;
+  border-radius: 5px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.contact-area form input::placeholder {
+  color: #b4b8b1;
+}
+@media (max-width: 500px) {
+  .contact-area form input {
+    width: 90%;
+    height: 3.5rem;
+  }
+}
+.contact-area form textarea {
+  width: 55%;
+  height: 8rem;
+  margin: 0.2rem;
+  border: 1px solid #dadedb;
+  padding: 1rem;
+  font-size: 1.7rem;
+  border-radius: 5px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.contact-area form textarea::placeholder {
+  color: #b4b8b1;
+}
+@media (max-width: 500px) {
+  .contact-area form textarea {
+    width: 90%;
+  }
+}
+.contact-area form .btnSubmit {
+  padding: 0;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #F6F6F6;
+  background-color: #22283A;
+  height: 3rem;
+  line-height: 3rem;
+  border-radius: 4px;
+  width: 100px;
+  cursor: pointer;
+}
+.contact-area form .btnSubmit:hover {
+  background-color: #F6F6F6;
+  color: #22283A;
+  text-decoration: underline;
+}
+.contact-area form .btnSubmit:hover a {
+  color: #22283A;
+}
+@media (max-width: 500px) {
+  .contact-area form .btnSubmit {
+    width: 90%;
+    height: 4rem;
+    line-height: 4rem;
+  }
 }
